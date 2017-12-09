@@ -1,0 +1,40 @@
+/* LANGUAGE */
+
+.selectLanguage {
+    position: fixed;
+    padding: 5px 20px 0px 93%;
+    z-index: 3;
+}
+
+.notClicked {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: #222;
+}
+
+/* JSON index */
+index {
+    color: aqua;
+    font-style: italic;
+}
+
+index:after,
+value:after {
+    color: white;
+    content: '"';
+}
+
+index:before,
+value:before {
+    color: white;
+    content: '"';
+}
+
+
+value {
+    color: rgb(142, 142, 142);
+}

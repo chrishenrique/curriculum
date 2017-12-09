@@ -1,0 +1,110 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Christiano Costa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+        <link rel="stylesheet" href="assets/css/curriculum.css">
+        <link rel="shortcut icon" media="all" type="image/x-icon" href="/img/favicon.ico">
+        <!-- jQuery -->
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <!-- BOOTSTRAP -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <!-- HANDLEBARS JS -->
+        <script type="text/javascript" src="assets/js/handlebars.js"></script>
+    </head>
+    <body class="loading bg-dark">
+        <script src="assets/js/pace.min.js"></script>
+        <div class="btn-group btn-group-sm selectLanguage" role="group" data-toggle="buttons">
+            <button type="button" name="changeLanguage" class="btn btn-outline-secondary" id="changeLanguagePT" value="PT" data-toggle="button" aria-pressed="true" autocomplete="off">
+                PT
+            </button>
+            <button type="button" name="changeLanguage" class="btn btn-outline-secondary notClicked" id="changeLanguageEN" value="EN" data-toggle="button" aria-pressed="false" autocomplete="off">
+                EN
+            </button>
+        </div>
+        <div id="template"></div>
+        <script id="language-template" type="text/x-handlebars-template">
+            <div>
+                <pre>
+                    {
+                        <index>name</index>: <value>Christiano Henrique de Oliveira Costa</value>,
+                        <index>developerType</index>: <value>Full-Stack Developer</value>,
+                        <index>PersonalDatas</index>: {
+                            <index>age</index>: <value>28</value>,
+                            <index>contacts</index>: {
+                                <index>phone</index>: <value>+55 31 98439-1081</value>,
+                                <index>email</index>: <value>chrishenrique16@hotmail.com</value>,
+                                <index>facebook</index>: <value>facebook.com/ChristianoCosta</value>
+                            },
+                            <index>locale</index>: {
+                                <index>city</index>: <value>Contagem|MG</value>
+                            }
+                        },
+                        <index>professionalExperiences</index>: {
+                            <index>0</index>: {
+                                <index>year</index>: <value>2014 - 2016</value>,
+                                <index>company</index>: <value>SEDESE/Ctic - Secretária de Estado de Sedenvolvimento Social</value>
+                                <index>office</index>: <value>Estágiário</value>
+                                <index>function</index>: <value>Desenvolvimento de sistemas em PHP e MySql ultilizando a Framework ScriptCase.</value>
+                            },
+                            <index>1</index>: {
+                                <index>year</index>: <value>2016 - 2016</value>,
+                                <index>company</index>: <value>Wquarks Desenvolvimento de Software Ltda</value>
+                                <index>role</index>: <value>Developer Junior</value>
+                                <index>function</index>: <value>Desenvolvimento de sistemas em PHP e MySql ultilizando a Framework Laravel.</value>
+                            },
+                        }
+                        <index>professionalDatas</index>: {
+                            <index>graduation</index>: {
+                                <index>university</index>: <value>Computer Science at FUMEC university in Belo Horizonte</value>,
+                                <index>period</index>: <value>5º</value>,
+                            },
+                            <index>skills</index>: {
+                                <index>languages</index>: {
+                                    <index>0</index>: <value>PHP 5.2 ~ 7.0</value>,
+                                    <index>1</index>: <value>HTML5, XML, XSD, XPath.</value>,
+                                    <index>2</index>: <value>CSS3, LESS, SASS</value>,
+                                    <index>3</index>: <value>JavaScript: OO, MVC, CoffeeScript</value>,
+                                    <index>4</index>: <value>jQuery, BackBoneJS, VueJS</value>,
+                                    <index>5</index>: <value>Laravel 4.2 ~ 5.4</value>,
+                                    <index>6</index>: <value>MySql</value>,
+                                }
+                            },
+                            <index>knowledge</index>: {
+                                <index>0</index>: <value>Git, Composer, Npm</value>,
+                                <index>1</index>: <value>Scrum, Kamban</value>,
+                                <index>2</index>: <value>TDD</value>,
+                                <index>3</index>: <value>English basic</value>
+                            }
+                            <index>projects</index>: {
+                                <index>freelancer</index>: {
+                                    <index>0</index>: {
+                                        <index>name</index>: <value>Ampliar Engenharia</value>,
+                                        <index>link</index>: <value>www.ampliarengenharia.com.br</value>,
+                                        <index>description</index>: <value>Developed in HTML5 and CSS3, Mobile Frist, Responsive</value>
+                                    },
+                                    <index>1</index>: {
+                                        <index>name</index>: <value>Igreja Batista Betel</value>,
+                                        <index>link</index>: <value>www.betelnarede.com.br</value>,
+                                        <index>description</index>: <value>Developed in HTML5, CSS3 and PHP (Laravel 5.4), Web Page and Sistem</value>
+                                    }
+
+                                },
+                                <index>personal</index>: {
+
+                                },
+                                <index>openSorces</index>: {
+
+                                }
+                            },
+                        },
+                    }
+                </pre>
+            </div>
+        </script>        
+    </body>
+    <script src="assets/js/lang.js"></script>
+</html>

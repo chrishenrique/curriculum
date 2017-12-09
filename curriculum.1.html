@@ -1,0 +1,123 @@
+<html lang="pt-BR"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Christiano Costa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+        <link rel="stylesheet" media="all" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/curriculum.css">
+        <link rel="shortcut icon" media="all" type="image/x-icon" href="/img/favicon.ico">
+        <!-- jQuery -->
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <!-- BOOTSTRAP -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <!-- HANDLEBARS JS -->
+        <script type="text/javascript" src="assets/js/handlebars.js"></script>
+    </head>
+    <body id="site" class="loading">
+        <script src="assets/js/pace.min.js"></script>
+        <div class="btn-group btn-group-sm selectLanguage" role="group" data-toggle="buttons">
+            <button type="button" name="changeLanguage" class="btn btn-outline-secondary" id="changeLanguagePT" value="PT" data-toggle="button" aria-pressed="true" autocomplete="off">
+            PT
+            </button>
+            <button type="button" name="changeLanguage" class="btn btn-outline-secondary notClicked" id="changeLanguageEN" value="EN" data-toggle="button" aria-pressed="false" autocomplete="off">
+            EN
+            </button>
+        </div>
+        <div id="template"></div>
+        <script id="language-template" type="text/x-handlebars-template">
+        <div class="container">
+            <header class="page-header">
+                <a href="/" class="logo">cc</a>
+                <h1 class="redline">{{name}}</h1>
+                <h2 class="redline redline--secondary">{{text_header}}</h2>
+            </header>
+            <section class="boxes frame">
+                <div class="bit-2 bit--left">
+                    <article class="box box--my-data">
+                        <header class="box__header">
+                            <h3 class="box__title">{{my_contacts}}</h3>
+                        </header>
+                        <section class="box__content">
+                            <ul class="box__list">
+                                <li class="box__list-item">+55 31 98439-1081 (Claro, WhatsApp).</li>
+                                <li class="box__list-item">chrishenrique16@hotmail.com</li>
+                                <li class="box__list-item">christiano@chtistianocosta.com</li>
+                                <li class="box__list-item">facebook.com/ChristianoCosta</li>
+                            </ul>
+                        </section>
+                    </article>
+                    <article class="box box--academic">
+                        <header class="box__header">
+                            <h3 class="box__title">{{formation}}</h3>
+                        </header>
+                        <section class="box__content">
+                            <ul class="box__list">
+                                <li class="box__list-item">{{acad_1}}</li>
+                                <li class="box__list-item">{{acad_2}}</li>
+                                <li class="box__list-item">{{acad_3}}</li>
+                            </ul>
+                        </section>
+                    </article>
+                    <article class="box box--experience">
+                        <header class="box__header">
+                            <h3 class="box__title">{{professional}}</h3>
+                        </header>
+                        <section class="box__content">
+                            <ul class="box__list">
+                                <li class="box__list-item">2016 - {{actual}} - {{wquarks}}</li>
+                                <li class="box__list-item">2014 - 2016 - {{cidadeadm}}</li>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+                <div class="bit-2 bit--right">
+                    <article class="box box--skills">
+                        <header class="box__header">
+                            <h3 class="box__title">{{qualifications}}</h3>
+                        </header>
+                        <section class="box__content">
+                            <ul class="box__list">
+                                <li class="box__list-item">XHTML, HTML5, XML, XSD, XPath.</li>
+                                <li class="box__list-item">CSS 2/3, LESS, SASS, tableless, Web-standards.</li>
+                                <li class="box__list-item">JavaScript: OO, MVC, CoffeeScript.</li>
+                                <li class="box__list-item">jQuery, jQueryUI, BackboneJS, VueJS.</li>
+                                <li class="box__list-item">PHP 5.x/7.</li>
+                                <li class="box__list-item">Laravel 3.x/4.x/5.x, ScriptCase 4.x/5.x/6.x/7.x/8.x.</li>
+                                <li class="box__list-item">MySQL, NoSql.</li>
+                                <li class="box__list-item">UML, OO, TDD, Design Patterns, Refactoring.</li>
+                                <li class="box__list-item">Git, Composer.</li>
+                                <li class="box__list-item">Web-Design, Gimp, Inkscape.</li>
+                                <li class="box__list-item">Scrum, Kamban.</li>
+                                <li class="box__list-item">{{english}}</li>
+                            </ul>
+                        </section>
+                    </article>
+                    <article class="box box--milestones">
+                        <header class="box__header">
+                            <h3 class="box__title">{{realizations}}</h3>
+                        </header>
+                        <section class="box__content">
+                            <ul class="box__list">
+                                <li class="box__list-item">{{real_1}}</li>
+                                <li class="box__list-item">{{real_2}}</li>
+                                <li class="box__list-item">{{real_3}}</li>
+                                <li class="box__list-item">{{real_4}}</li>
+                                <li class="box__list-item">{{real_5}}</li>
+                                <li class="box__list-item">{{real_6}}</li>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer class="owner-info text-center">
+            <p class="owner-info__line"><a href="http://facebook.com/LoreCodeWeb">LoreCode no facebook</a></p>
+            <p class="owner-info__line">contato@lorecode.com</p>
+            <p class="owner-info__line">www.lorecode.com / www.lorecode.com.br</p>
+        </footer>
+    </script>        
+</body>
+<script src="assets/js/lang.js"></script>
+</html>
